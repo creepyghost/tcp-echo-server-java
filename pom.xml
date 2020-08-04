@@ -3,8 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>EchoServer</artifactId>
-    <groupId>net.media</groupId>
+    <groupId>net.media.training.ci</groupId>
     <version>1.0</version>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+
+    </dependencies>
     <build>
         <resources>
             <resource>
