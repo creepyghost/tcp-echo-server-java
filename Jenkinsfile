@@ -33,7 +33,7 @@ pipeline {
                         toolName: 'docker') {
                         
                         // Build and Push
-                        def echoServerImage = docker.build("hub.docker.com/creepyghost/java-echoserver:latest");
+                        def echoServerImage = docker.build("creepyghost/java-echoserver:latest");
                         echoServerImage.push();
                     }
                 }
