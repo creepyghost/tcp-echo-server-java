@@ -31,7 +31,7 @@ pipeline {
                     withDockerRegistry(
                         credentialsId: 'c01a453f-fe69-47d4-ad63-81dfaa273d7c',
                         toolName: 'docker',
-                        url: 'hub.docker.com/creepyghost') {
+                        url: 'https://hub.docker.com/creepyghost') {
                         
                         // Build and Push
                         def echoServerImage = docker.build("hub.docker.com/creepyghost/java-echoserver:latest");
